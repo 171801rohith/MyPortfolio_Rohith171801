@@ -8,13 +8,13 @@ app.config["SECRET_KEY"] = (
 
 
 def greet():
-    timeIs = time.strftime("%H")
-    if int(timeIs) > 16:
-        return "Evening "
-    if int(timeIs) > 12:
-        return "Afternoon "
+    hour = time.localtime().tm_hour
+    if hour >= 17:
+        return "Evening"
+    elif hour >= 12:
+        return "Afternoon"
     else:
-        return "Morning "
+        return "Morning"
 
 
 @app.route("/")
