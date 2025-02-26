@@ -3,15 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap"
+      rel="stylesheet"
+    />
     <title>MyPortfolio_Rohith</title>
   </head>
   <body>
     <nav id="navbar">
       <ul>
         <a href="#rohith"><li>HOME</li></a>
-        <a href=""><li>SKILLS</li></a>
-        <a href=""><li>PROJECTS</li></a>
-        <a href=""><li>CONNECT</li></a>
+        <a href="#skills"><li>SKILLS</li></a>
+        <a href="#projects"><li>PROJECTS</li></a>
+        <a href="#connect"><li>CONNECT</li></a>
       </ul>
     </nav>
     <div id="rohith">
@@ -20,14 +30,26 @@
         <br />
         I am Rohith M
       </h1>
-      <a href="https://github.com/171801rohith"
-        ><img src="{{url_for('static', filename='images/github.png')}}" alt=""
-      /></a>
-      <a href="https://www.linkedin.com/in/rohith-m-3853a6293/"
-        ><img
-          src="{{url_for('static', filename='images/linkedin.png')}}"
-          alt=""
-      /></a>
+      <p>
+        Student of
+        <a href="https://www.sahyadri.edu.in/"
+          >Sahyadri College of Engineering and Management, Mangalore</a
+        >
+      </p>
+      <div class="icon">
+        <a href="https://github.com/171801rohith" target="_blank"
+          ><img src="{{url_for('static', filename='images/github.png')}}"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/rohith-m-3853a6293/"
+          target="_blank"
+          ><img src="{{url_for('static', filename='images/linkedin.png')}}"
+        /></a>
+      </div>
     </div>
+
+    <div id="skills"></div>
+    <div id="projects"></div>
+    <div id="connect"></div>
   </body>
 </html>
