@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyPortfolio_Rohith</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <ul>
+        <a href="#rohith"><li>HOME</li></a>
+        <a href=""><li>SKILLS</li></a>
+        <a href=""><li>PROJECTS</li></a>
+        <a href=""><li>CONNECT</li></a>
+      </ul>
+    </nav>
+    <div id="rohith">
+      <h1>
+        Good {{greeting}}
+        <br />
+        I am Rohith M
+      </h1>
+      <a href="https://github.com/171801rohith"
+        ><img src="{{url_for('static', filename='images/github.png')}}" alt=""
+      /></a>
+      <a href="https://www.linkedin.com/in/rohith-m-3853a6293/"
+        ><img
+          src="{{url_for('static', filename='images/linkedin.png')}}"
+          alt=""
+      /></a>
+    </div>
+  </body>
+</html>
