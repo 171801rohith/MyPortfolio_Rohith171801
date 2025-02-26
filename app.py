@@ -1,5 +1,6 @@
 from flask import Flask, render_template
-import time
+from datetime import datetime
+import pytz
 
 app = Flask(__name__)
 app.config["SECRET_KEY"] = (
@@ -8,7 +9,8 @@ app.config["SECRET_KEY"] = (
 
 
 def greet():
-    hour = time.localtime().tm_hour
+    ist = pytz.timezone("Asia/Kolkata")
+    hour = datetime.now(ist).hour
     if hour >= 17:
         return "Evening"
     elif hour >= 12:
