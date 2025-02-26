@@ -48,7 +48,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 20px;
+  padding: 150px 20px 20px 20px;
 }
 
 #rohith h1 {
@@ -95,4 +95,16 @@ body {
 .icon a img:hover {
   filter: drop-shadow(0 0 10px rgba(34, 14, 255, 0.796));
   transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  #navbar ul {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  #rohith h1 {
+    font-size: 2rem;
+  }
 }
