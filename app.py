@@ -1,11 +1,13 @@
 from flask import Flask, render_template
 from datetime import datetime
+from dotenv import load_dotenv
 import pytz
+import os
+
+load_dotenv()
 
 app = Flask(__name__)
-app.config["SECRET_KEY"] = (
-    "8f3a7d9b2c6e4f1a9b3c8d7e6f5a4b2c1d0e9f8a7c6b5d4e3f2a1b0c9d8e7f6g"
-)
+app.config["SECRET_KEY"] = os.getenv("SECRET_KEY")
 
 
 def greet():
