@@ -172,16 +172,24 @@ body {
 
 @media (max-width: 768px) {
   #navbar ul {
-    flex-direction: column;
+    overflow: hidden;
+    overflow-x: scroll;
     text-align: center;
-    gap: 10px;
+    scroll-behavior: smooth;
+    padding-left: 5%;
+    gap: 10%;
+  }
+
+  #navbar ul::-webkit-scrollbar {
+    display: none;
+  }
+  
+  #navbar ul {
+    -ms-overflow-style: none; 
+    scrollbar-width: none;  
   }
 
   #rohith h1 {
     font-size: 2rem;
   }
- #skills{
-  padding-top: 200px;
- }
-
 }
