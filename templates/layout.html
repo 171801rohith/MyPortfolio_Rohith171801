@@ -39,10 +39,12 @@
       </p>
       <div class="icon">
         <a href="https://github.com/171801rohith" target="_blank"
-          ><img src="images/github.png" alt="GitHub"
+          ><img src="{{url_for('static', filename='images/github.png')}}"
         /></a>
-        <a href="https://www.linkedin.com/in/rohith-m-3853a6293/" target="_blank"
-          ><img src="images/linkedin.png" alt="LinkedIn"
+
+          href="https://www.linkedin.com/in/rohith-m-3853a6293/"
+          target="_blank"
+          ><img src="{{url_for('static', filename='images/linkedin.png')}}"
         /></a>
       </div>
     </div>
@@ -55,38 +57,36 @@
           <button class="skill">Python</button>
           <button class="skill">Java</button>
           <button class="skill">C</button>
-          <button class="skill">C++</button>
           <button class="skill">HTML & CSS</button>
-          <button class="skill">JavaScript</button>
         </div>
       </div>
       <div class="parts">
         <p>Frameworks and Tools</p>
         <div class="contents">
           <button class="skill">Flask</button>
+          <button class="skill">FastAPI</button>
           <button class="skill">Java Swing</button>
           <button class="skill">KNIME</button>
           <button class="skill">Git & GitHub</button>
-          <button class="skill">VS Code</button>
-          <button class="skill">IntelliJ IDEA</button>
         </div>
       </div>
       <div class="parts">
         <p>Databases</p>
         <div class="contents">
+          <button class="skill">PostgreSQL</button>
           <button class="skill">MongoDB</button>
           <button class="skill">MySQL</button>
           <button class="skill">SQLite</button>
         </div>
       </div>
-      <div class="parts">
+      <!-- <div class="parts">
         <p>Other Skills</p>
         <div class="contents">
           <button class="skill">Data Analysis</button>
           <button class="skill">Problem Solving</button>
           <button class="skill">Web Development</button>
           <button class="skill">UI/UX Design</button>
-        </div>
+        </div> -->
       </div>
     </div>
 
@@ -98,16 +98,8 @@
           <p>A responsive personal portfolio website built with HTML, CSS, and Flask. Features smooth animations, modern design, and dynamic content rendering.</p>
         </a>
         <a href="#" class="pros" target="_blank">
-          <h3>Data Analysis Dashboard</h3>
-          <p>Interactive dashboard for data visualization using Python, Flask, and MongoDB. Includes real-time data processing and dynamic chart generation.</p>
-        </a>
-        <a href="#" class="pros" target="_blank">
           <h3>Java Swing Application</h3>
           <p>Desktop application with user-friendly GUI built using Java Swing. Features database connectivity and comprehensive data management capabilities.</p>
-        </a>
-        <a href="#" class="pros" target="_blank">
-          <h3>Web Scraping Tool</h3>
-          <p>Automated web scraping tool built with Python for data collection and analysis. Includes data cleaning, processing, and export functionalities.</p>
         </a>
       </div>
     </div>
