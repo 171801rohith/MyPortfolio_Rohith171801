@@ -24,6 +24,7 @@
         <a href="#connect"><li>CONNECT</li></a>
       </ul>
     </nav>
+    
     <div id="rohith">
       <h1>
         Good {{greeting}},
@@ -38,25 +39,25 @@
       </p>
       <div class="icon">
         <a href="https://github.com/171801rohith" target="_blank"
-          ><img src="{{url_for('static', filename='images/github.png')}}"
+          ><img src="images/github.png" alt="GitHub"
         /></a>
-        <a
-          href="https://www.linkedin.com/in/rohith-m-3853a6293/"
-          target="_blank"
-          ><img src="{{url_for('static', filename='images/linkedin.png')}}"
+        <a href="https://www.linkedin.com/in/rohith-m-3853a6293/" target="_blank"
+          ><img src="images/linkedin.png" alt="LinkedIn"
         /></a>
       </div>
     </div>
 
-    <!-- <div id="skills">
+    <div id="skills">
+      <h2>My Skills</h2>
       <div class="parts">
-        <p>Programing languages</p>
+        <p>Programming Languages</p>
         <div class="contents">
           <button class="skill">Python</button>
           <button class="skill">Java</button>
           <button class="skill">C</button>
           <button class="skill">C++</button>
           <button class="skill">HTML & CSS</button>
+          <button class="skill">JavaScript</button>
         </div>
       </div>
       <div class="parts">
@@ -65,24 +66,69 @@
           <button class="skill">Flask</button>
           <button class="skill">Java Swing</button>
           <button class="skill">KNIME</button>
-          <button class="skill">GIT</button>
+          <button class="skill">Git & GitHub</button>
+          <button class="skill">VS Code</button>
+          <button class="skill">IntelliJ IDEA</button>
         </div>
       </div>
       <div class="parts">
-        <p>DataBases</p>
+        <p>Databases</p>
         <div class="contents">
           <button class="skill">MongoDB</button>
           <button class="skill">MySQL</button>
+          <button class="skill">SQLite</button>
+        </div>
+      </div>
+      <div class="parts">
+        <p>Other Skills</p>
+        <div class="contents">
+          <button class="skill">Data Analysis</button>
+          <button class="skill">Problem Solving</button>
+          <button class="skill">Web Development</button>
+          <button class="skill">UI/UX Design</button>
         </div>
       </div>
     </div>
+
     <div id="projects">
+      <h2>My Projects</h2>
       <div class="sections">
-        <div class="pros">
-          <a href="" target="_blank"><p>1.</p></a>
-        </div>
+        <a href="#" class="pros" target="_blank">
+          <h3>Portfolio Website</h3>
+          <p>A responsive personal portfolio website built with HTML, CSS, and Flask. Features smooth animations, modern design, and dynamic content rendering.</p>
+        </a>
+        <a href="#" class="pros" target="_blank">
+          <h3>Data Analysis Dashboard</h3>
+          <p>Interactive dashboard for data visualization using Python, Flask, and MongoDB. Includes real-time data processing and dynamic chart generation.</p>
+        </a>
+        <a href="#" class="pros" target="_blank">
+          <h3>Java Swing Application</h3>
+          <p>Desktop application with user-friendly GUI built using Java Swing. Features database connectivity and comprehensive data management capabilities.</p>
+        </a>
+        <a href="#" class="pros" target="_blank">
+          <h3>Web Scraping Tool</h3>
+          <p>Automated web scraping tool built with Python for data collection and analysis. Includes data cleaning, processing, and export functionalities.</p>
+        </a>
       </div>
     </div>
-    <div id="connect"></div> -->
+
+    <div id="connect">
+      <h2>Let's Connect</h2>
+      <p>Feel free to reach out to me for collaborations, opportunities, or just to say hello!</p>
+      <div class="contact-icons">
+        <a href="https://github.com/171801rohith" target="_blank" title="GitHub">
+          <span>🐙</span>
+        </a>
+        <a href="https://www.linkedin.com/in/rohith-m-3853a6293/" target="_blank" title="LinkedIn">
+          <span>💼</span>
+        </a>
+        <a href="mailto:rohith@example.com" target="_blank" title="Email">
+          <span>📧</span>
+        </a>
+        <a href="tel:+91xxxxxxxxxx" target="_blank" title="Phone">
+          <span>📱</span>
+        </a>
+      </div>
+    </div>
   </body>
 </html>
