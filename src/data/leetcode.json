@@ -1,0 +1,33 @@
+{
+  "generatedAt": "2026-09-25T08:08:03.497Z",
+  "username": "hydumGoRFC",
+  "profileUrl": "https://leetcode.com/u/hydumGoRFC/",
+  "solved": 488,
+  "totalQuestions": 4060,
+  "difficulties": [
+    {
+      "name": "Easy",
+      "solved": 286,
+      "total": 966
+    },
+    {
+      "name": "Medium",
+      "solved": 187,
+      "total": 2117
+    },
+    {
+      "name": "Hard",
+      "solved": 15,
+      "total": 977
+    }
+  ],
+  "ranking": 224499,
+  "badges": [
+    "200 Days Badge 2026",
+    "100 Days Badge 2026",
+    "50 Days Badge 2026"
+  ],
+  "calendarYear": 2026,
+  "activeDays": 207,
+  "maxStreak": 58
+}

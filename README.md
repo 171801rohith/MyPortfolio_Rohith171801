@@ -1,98 +1,102 @@
-# MyPortfolio_Rohith171801
+# Rohith M — Portfolio
 
-A personal portfolio web application built with Flask to showcase skills, projects, and provide a contact point.
+Personal portfolio for Rohith M, Backend & AI Engineer.
+Built with **React + Vite + TypeScript + Tailwind CSS v4 + Framer Motion**.
 
-## Features
+Live: https://my-portfolio-rohith171801.vercel.app
 
-- **Dynamic Greeting**: The homepage greets users with "Good Morning", "Good Afternoon", or "Good Evening" based on the time in India (IST).
-- **Responsive Design**: Uses HTML templates and static assets for a modern portfolio look.
-- **Environment-based Configuration**: Secure configuration using `.env`.
-- **Easy Deployment**: Ready for deployment on Vercel or any WSGI-compatible platform.
+## Quick start
 
-## Demo
+Requires Node.js 20.19+ (22 LTS recommended).
 
-> [Live Demo Link (if available)](https://your-demo-url)
-
-## Getting Started
-
-### Prerequisites
-
-- Python 3.8+
-- [pip](https://pip.pypa.io/en/stable/)
-- (Recommended) [virtualenv](https://virtualenv.pypa.io/en/latest/)
-
-### Installation
-
-1. **Clone the repository**
-   ```sh
-   git clone https://github.com/171801rohith/MyPortfolio_Rohith171801.git
-   cd MyPortfolio_Rohith171801
-   ```
-
-2. **Create a virtual environment (optional but recommended)**
-   ```sh
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-
-3. **Install dependencies**
-   ```sh
-   pip install -r requirements.txt
-   ```
-
-4. **Configure environment variables**
-
-   - Copy `.env.example` (if exists) to `.env` and fill in the required values.
-   - At minimum, set a `SECRET_KEY` for Flask sessions.
-
-5. **Run the application**
-   ```sh
-   python app.py
-   ```
-   The app will be available at [http://127.0.0.1:5000](http://127.0.0.1:5000).
-
-## Project Structure
-
-```
-.
-├── app.py                # Main Flask application
-├── requirements.txt      # Python dependencies
-├── .env                  # Environment variables (not tracked in git)
-├── static/               # Static files (CSS, JS, images)
-├── templates/
-│   └── layout.html       # Main HTML template
-├── vercel.json           # Configuration for Vercel deployment
-└── venv/                 # Virtual environment (not tracked in git)
+```bash
+npm install
+npm run dev          # http://localhost:5173
 ```
 
-## Customization
+| Script | What it does |
+|---|---|
+| `npm run dev` | Dev server with hot reload |
+| `npm run build` | Type-check, then production build into `dist/` (base `/`, for Vercel) |
+| `npm run build:gh-pages` | Production build with base `/MyPortfolio_Rohith171801/`, for GitHub Pages |
+| `npm run preview` | Serve the built `dist/` locally |
+| `npm run fetch:github` | Refresh `src/data/github.json` and `src/data/leetcode.json` |
 
-- Edit `templates/layout.html` to customize the portfolio content, sections, and styling.
-- Add your own static assets (CSS, JS, images) in the `static/` directory.
+## Editing content
 
-## Dependencies
+All text lives in **`src/data/portfolio.ts`**. You shouldn't need to touch components to:
 
-Key packages (see `requirements.txt` for details):
-- Flask
-- python-dotenv
-- pytz
-- Jinja2
-- WTForms
+- change the bio, tagline, status line or contact links (`profile`, `about`)
+- add or reorder skills (`skills`)
+- add a job (`experience`) or a certification (`certifications`; the block appears once the list isn't empty)
+- add, remove or reorder projects (`projects`). Set `featured: true` for the large two-column cards, `demo: 'https://…'` to show a **Live demo** button, and `filters` to control which filter chips match.
+- adjust the language chart (`githubStats`): which repos and languages to ignore, and how many to show
 
-## Deployment
+The downloadable resume is `public/Rohith_M_Resume.pdf`. Replace the file (keep the name) to update it.
 
-The repository includes a `vercel.json` file for easy deployment to [Vercel](https://vercel.com/).
-You can also deploy to any platform that supports Python and WSGI.
+## Refreshing GitHub & LeetCode data
 
-## License
+```bash
+npm run fetch:github
+# optional: lift the 60 requests/hour anonymous GitHub limit
+GITHUB_TOKEN=ghp_yourtoken npm run fetch:github
+# refresh just one source
+npm run fetch:github -- --leetcode-only
+npm run fetch:github -- --github-only
+```
 
-[MIT License](LICENSE)  <!-- Update if your repo uses a different license -->
+The script (`scripts/fetch-github.js`) uses the GitHub REST API. It doesn't scrape anything. For each repo it collects stars, forks, topics, languages, homepage, dates, and weekly commit counts for the last 52 weeks. It writes everything to `src/data/github.json`, which the Projects and GitHub sections read at build time. It also queries LeetCode's public GraphQL API (the same endpoint the profile page uses) for solved counts by difficulty, active days, max streak and badges, and writes them to `src/data/leetcode.json`. Re-run it and redeploy whenever you want fresh numbers. The two sources are independent: if one fails (for example, the GitHub rate limit), its existing file is left untouched and the other still refreshes.
 
-## Author
+Notes:
 
-**Rohith (171801rohith)**  
-[GitHub Profile](https://github.com/171801rohith)
+- Team projects that live on forks (currently `Pravaah`) are opted in via `INCLUDE_FORKS` in the script. Other forks are skipped.
+- Usernames default to `171801rohith` (GitHub) and `hydumGoRFC` (LeetCode). Override them with `GITHUB_USERNAME` / `LEETCODE_USERNAME`.
+- Commit counts come from `/stats/participation`, which counts commits by the repo owner on the default branch.
 
----
+## Project structure
 
-*Feel free to fork and adapt this portfolio to your own needs!*
+```
+public/                 favicon, OG image, resume PDF, robots.txt, sitemap.xml
+scripts/fetch-github.js GitHub + LeetCode APIs → src/data/*.json
+src/
+  data/portfolio.ts     all editable site content
+  data/github.json      generated GitHub data (commit it)
+  data/leetcode.json    generated LeetCode data (commit it)
+  lib/github.ts         typed access + language aggregation
+  lib/theme.ts          dark/light toggle (persists choice, follows OS by default)
+  components/           one file per section
+  index.css             design tokens (colors, fonts) for both themes
+index.html              meta, Open Graph, JSON-LD, no-flash theme script
+```
+
+## Deploying
+
+### Vercel (primary)
+
+`vercel.json` is already set up for a static Vite build (`dist/`, long-lived caching for hashed assets).
+
+1. Push the repo to GitHub.
+2. In Vercel, open the existing project (or **Add New → Project** and import `MyPortfolio_Rohith171801`).
+3. Vercel reads `vercel.json`, so no settings need changing. If the project was created for the old Flask app, check that **Settings → Build & Development → Framework Preset** is `Vite` and that there is no leftover Python runtime override.
+4. Deploy. Every push to `main` redeploys automatically.
+
+CLI alternative: `npm i -g vercel && vercel --prod`.
+
+### GitHub Pages
+
+A project site is served from `https://171801rohith.github.io/MyPortfolio_Rohith171801/`, so the build needs that base path. `npm run build:gh-pages` sets it (see `vite.config.ts`).
+
+1. Repo **Settings → Pages → Build and deployment → Source: GitHub Actions**.
+2. **Actions → Deploy to GitHub Pages → Run workflow** (`.github/workflows/deploy-pages.yml`).
+   To deploy on every push, uncomment the `push` trigger in that file.
+
+If you deploy to a different URL (Pages, or a custom domain), update the canonical/Open Graph URLs in `index.html`, `site.url` in `src/data/portfolio.ts`, and `public/robots.txt` / `public/sitemap.xml`. Those currently point at the Vercel domain.
+
+For a custom domain or a `<user>.github.io` repo, build with `BASE_PATH=/ npm run build:gh-pages`.
+
+## Accessibility & performance notes
+
+- Semantic landmarks, skip link, visible focus rings, `aria-pressed` filter chips, reduced-motion support.
+- Charts are decorative for screen readers. Each has a "View as table" fallback and a text summary.
+- Colors were chosen for WCAG AA text contrast in both themes.
+- No images besides the inline SVG icons, one small JS chunk, fonts loaded with `display=swap`.

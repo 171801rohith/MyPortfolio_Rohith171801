@@ -1,0 +1,785 @@
+{
+  "generatedAt": "2026-09-25T07:41:03.580Z",
+  "user": {
+    "login": "171801rohith",
+    "name": "Rohith M",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/180276671?v=4",
+    "htmlUrl": "https://github.com/171801rohith",
+    "publicRepos": 26,
+    "followers": 6,
+    "createdAt": "2024-09-03T09:35:12Z"
+  },
+  "stats": {
+    "totalRepos": 26,
+    "originalRepos": 23,
+    "forkedRepos": 3,
+    "totalStars": 1,
+    "weeklyCommits": [
+      {
+        "week": "2025-09-29",
+        "count": 4
+      },
+      {
+        "week": "2025-10-06",
+        "count": 19
+      },
+      {
+        "week": "2025-10-13",
+        "count": 0
+      },
+      {
+        "week": "2025-10-20",
+        "count": 0
+      },
+      {
+        "week": "2025-10-27",
+        "count": 0
+      },
+      {
+        "week": "2025-11-03",
+        "count": 0
+      },
+      {
+        "week": "2025-11-10",
+        "count": 0
+      },
+      {
+        "week": "2025-11-17",
+        "count": 0
+      },
+      {
+        "week": "2025-11-24",
+        "count": 0
+      },
+      {
+        "week": "2025-12-01",
+        "count": 2
+      },
+      {
+        "week": "2025-12-08",
+        "count": 1
+      },
+      {
+        "week": "2025-12-15",
+        "count": 0
+      },
+      {
+        "week": "2025-12-22",
+        "count": 0
+      },
+      {
+        "week": "2025-12-29",
+        "count": 0
+      },
+      {
+        "week": "2026-01-05",
+        "count": 0
+      },
+      {
+        "week": "2026-01-12",
+        "count": 0
+      },
+      {
+        "week": "2026-01-19",
+        "count": 7
+      },
+      {
+        "week": "2026-01-26",
+        "count": 0
+      },
+      {
+        "week": "2026-02-02",
+        "count": 4
+      },
+      {
+        "week": "2026-02-09",
+        "count": 6
+      },
+      {
+        "week": "2026-02-16",
+        "count": 0
+      },
+      {
+        "week": "2026-02-23",
+        "count": 7
+      },
+      {
+        "week": "2026-03-02",
+        "count": 14
+      },
+      {
+        "week": "2026-03-09",
+        "count": 16
+      },
+      {
+        "week": "2026-03-16",
+        "count": 28
+      },
+      {
+        "week": "2026-03-23",
+        "count": 13
+      },
+      {
+        "week": "2026-03-30",
+        "count": 10
+      },
+      {
+        "week": "2026-04-06",
+        "count": 7
+      },
+      {
+        "week": "2026-04-13",
+        "count": 7
+      },
+      {
+        "week": "2026-04-20",
+        "count": 7
+      },
+      {
+        "week": "2026-04-27",
+        "count": 7
+      },
+      {
+        "week": "2026-05-04",
+        "count": 6
+      },
+      {
+        "week": "2026-05-11",
+        "count": 7
+      },
+      {
+        "week": "2026-05-18",
+        "count": 6
+      },
+      {
+        "week": "2026-05-25",
+        "count": 7
+      },
+      {
+        "week": "2026-06-01",
+        "count": 7
+      },
+      {
+        "week": "2026-06-08",
+        "count": 11
+      },
+      {
+        "week": "2026-06-15",
+        "count": 6
+      },
+      {
+        "week": "2026-06-22",
+        "count": 5
+      },
+      {
+        "week": "2026-06-29",
+        "count": 2
+      },
+      {
+        "week": "2026-07-06",
+        "count": 13
+      },
+      {
+        "week": "2026-07-13",
+        "count": 11
+      },
+      {
+        "week": "2026-07-20",
+        "count": 29
+      },
+      {
+        "week": "2026-07-27",
+        "count": 17
+      },
+      {
+        "week": "2026-08-03",
+        "count": 40
+      },
+      {
+        "week": "2026-08-10",
+        "count": 23
+      },
+      {
+        "week": "2026-08-17",
+        "count": 21
+      },
+      {
+        "week": "2026-08-24",
+        "count": 16
+      },
+      {
+        "week": "2026-08-31",
+        "count": 8
+      },
+      {
+        "week": "2026-09-07",
+        "count": 32
+      },
+      {
+        "week": "2026-09-14",
+        "count": 20
+      },
+      {
+        "week": "2026-09-21",
+        "count": 40
+      }
+    ],
+    "commitsLastYear": 486,
+    "activeWeeks": 38,
+    "longestWeekStreak": 31
+  },
+  "repos": [
+    {
+      "name": "My-AI-Agent",
+      "description": null,
+      "htmlUrl": "https://github.com/171801rohith/My-AI-Agent",
+      "homepage": null,
+      "language": "Python",
+      "languages": {
+        "Python": 108327
+      },
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "fork": false,
+      "archived": false,
+      "size": 6750,
+      "createdAt": "2025-07-27T05:51:10Z",
+      "updatedAt": "2026-09-24T16:54:21Z",
+      "pushedAt": "2026-09-24T16:54:16Z",
+      "commitsLastYear": 7
+    },
+    {
+      "name": "LeetCode-Progs",
+      "description": null,
+      "htmlUrl": "https://github.com/171801rohith/LeetCode-Progs",
+      "homepage": null,
+      "language": "Java",
+      "languages": {
+        "Java": 795548,
+        "PLpgSQL": 9477
+      },
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "fork": false,
+      "archived": false,
+      "size": 1126,
+      "createdAt": "2024-10-16T15:17:00Z",
+      "updatedAt": "2026-09-24T14:02:56Z",
+      "pushedAt": "2026-09-24T14:02:34Z",
+      "commitsLastYear": 399
+    },
+    {
+      "name": "ProcureMind",
+      "description": null,
+      "htmlUrl": "https://github.com/171801rohith/ProcureMind",
+      "homepage": null,
+      "language": "Java",
+      "languages": {
+        "Java": 431076,
+        "JavaScript": 109646,
+        "Python": 48035,
+        "CSS": 9760,
+        "Dockerfile": 4788,
+        "HTML": 4444,
+        "Smalltalk": 4093,
+        "Shell": 1371
+      },
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "fork": false,
+      "archived": false,
+      "size": 790,
+      "createdAt": "2026-07-26T09:34:09Z",
+      "updatedAt": "2026-09-22T15:23:02Z",
+      "pushedAt": "2026-09-22T15:22:54Z",
+      "commitsLastYear": 26
+    },
+    {
+      "name": "StrongBox",
+      "description": null,
+      "htmlUrl": "https://github.com/171801rohith/StrongBox",
+      "homepage": null,
+      "language": "Kotlin",
+      "languages": {
+        "Kotlin": 80521
+      },
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "fork": false,
+      "archived": false,
+      "size": 92,
+      "createdAt": "2026-09-14T08:06:19Z",
+      "updatedAt": "2026-09-14T08:12:01Z",
+      "pushedAt": "2026-09-14T08:18:00Z",
+      "commitsLastYear": 1
+    },
+    {
+      "name": "VaultGuardian",
+      "description": null,
+      "htmlUrl": "https://github.com/171801rohith/VaultGuardian",
+      "homepage": null,
+      "language": "Python",
+      "languages": {
+        "Python": 32388,
+        "Shell": 1448
+      },
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "fork": false,
+      "archived": false,
+      "size": 22,
+      "createdAt": "2026-09-11T17:48:53Z",
+      "updatedAt": "2026-09-11T17:51:10Z",
+      "pushedAt": "2026-09-11T17:51:05Z",
+      "commitsLastYear": 1
+    },
+    {
+      "name": "Cloud-Computing-Lab-Work-7th-Sem",
+      "description": null,
+      "htmlUrl": "https://github.com/171801rohith/Cloud-Computing-Lab-Work-7th-Sem",
+      "homepage": null,
+      "language": null,
+      "languages": {},
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "fork": false,
+      "archived": false,
+      "size": 2333,
+      "createdAt": "2026-08-16T14:40:55Z",
+      "updatedAt": "2026-08-16T14:47:34Z",
+      "pushedAt": "2026-08-16T14:47:05Z",
+      "commitsLastYear": 2
+    },
+    {
+      "name": "SpringBootLearn",
+      "description": null,
+      "htmlUrl": "https://github.com/171801rohith/SpringBootLearn",
+      "homepage": null,
+      "language": "Java",
+      "languages": {
+        "Java": 90390
+      },
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "fork": false,
+      "archived": false,
+      "size": 83,
+      "createdAt": "2026-03-15T07:01:02Z",
+      "updatedAt": "2026-04-09T06:11:13Z",
+      "pushedAt": "2026-04-09T06:11:10Z",
+      "commitsLastYear": 24
+    },
+    {
+      "name": "Pravaah",
+      "description": null,
+      "htmlUrl": "https://github.com/171801rohith/Pravaah",
+      "homepage": null,
+      "language": null,
+      "languages": {
+        "Python": 31280,
+        "Dockerfile": 1263
+      },
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "fork": true,
+      "archived": false,
+      "size": 112750,
+      "createdAt": "2026-02-12T17:10:31Z",
+      "updatedAt": "2026-02-12T17:10:31Z",
+      "pushedAt": "2026-02-12T06:08:58Z",
+      "commitsLastYear": 20
+    },
+    {
+      "name": "DBMS_MINI_PROJECT_KARO",
+      "description": null,
+      "htmlUrl": "https://github.com/171801rohith/DBMS_MINI_PROJECT_KARO",
+      "homepage": null,
+      "language": "Python",
+      "languages": {
+        "Python": 49390,
+        "JavaScript": 39371,
+        "CSS": 28728,
+        "Mako": 704,
+        "HTML": 583
+      },
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "fork": true,
+      "archived": false,
+      "size": 8739,
+      "createdAt": "2025-12-02T14:15:29Z",
+      "updatedAt": "2025-12-08T14:40:00Z",
+      "pushedAt": "2025-12-08T14:39:56Z",
+      "commitsLastYear": 3
+    },
+    {
+      "name": "PYTHON",
+      "description": null,
+      "htmlUrl": "https://github.com/171801rohith/PYTHON",
+      "homepage": null,
+      "language": "Python",
+      "languages": {
+        "Python": 29991298,
+        "C": 187906,
+        "PowerShell": 77091,
+        "Cython": 61770,
+        "JavaScript": 10068,
+        "CSS": 6078,
+        "Batchfile": 4062,
+        "HTML": 2989
+      },
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "fork": false,
+      "archived": false,
+      "size": 79298,
+      "createdAt": "2024-10-10T17:27:55Z",
+      "updatedAt": "2025-09-30T17:32:14Z",
+      "pushedAt": "2025-09-30T17:32:11Z",
+      "commitsLastYear": 2
+    },
+    {
+      "name": "My-MCP-Server",
+      "description": null,
+      "htmlUrl": "https://github.com/171801rohith/My-MCP-Server",
+      "homepage": null,
+      "language": "Python",
+      "languages": {
+        "Python": 10106,
+        "Mako": 704
+      },
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "fork": false,
+      "archived": false,
+      "size": 121,
+      "createdAt": "2025-08-17T10:33:52Z",
+      "updatedAt": "2025-09-28T09:07:01Z",
+      "pushedAt": "2025-09-28T09:06:58Z",
+      "commitsLastYear": 1
+    },
+    {
+      "name": "AerophiliaBackend",
+      "description": null,
+      "htmlUrl": "https://github.com/171801rohith/AerophiliaBackend",
+      "homepage": null,
+      "language": "TypeScript",
+      "languages": {},
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "fork": true,
+      "archived": false,
+      "size": 6240,
+      "createdAt": "2025-08-31T06:11:17Z",
+      "updatedAt": "2025-09-07T12:26:55Z",
+      "pushedAt": "2025-09-07T12:26:51Z",
+      "commitsLastYear": 0
+    },
+    {
+      "name": "MyPortfolio_Rohith171801",
+      "description": null,
+      "htmlUrl": "https://github.com/171801rohith/MyPortfolio_Rohith171801",
+      "homepage": "https://my-portfolio-rohith171801.vercel.app",
+      "language": "Python",
+      "languages": {
+        "Python": 6794832,
+        "PowerShell": 25697,
+        "CSS": 16013,
+        "JavaScript": 10068,
+        "HTML": 9528,
+        "C": 4149,
+        "Batchfile": 1352
+      },
+      "stars": 1,
+      "forks": 1,
+      "topics": [],
+      "fork": false,
+      "archived": false,
+      "size": 6436,
+      "createdAt": "2025-02-26T05:23:26Z",
+      "updatedAt": "2025-08-28T10:30:01Z",
+      "pushedAt": "2025-08-02T14:16:32Z",
+      "commitsLastYear": 0
+    },
+    {
+      "name": "SUPER-60",
+      "description": null,
+      "htmlUrl": "https://github.com/171801rohith/SUPER-60",
+      "homepage": null,
+      "language": "Python",
+      "languages": {
+        "Python": 12580510,
+        "PowerShell": 25697,
+        "Jupyter Notebook": 12735,
+        "Java": 8867,
+        "Batchfile": 1362,
+        "Dockerfile": 166
+      },
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "fork": false,
+      "archived": false,
+      "size": 16623,
+      "createdAt": "2024-10-15T16:13:36Z",
+      "updatedAt": "2025-08-03T05:31:56Z",
+      "pushedAt": "2025-07-31T17:15:10Z",
+      "commitsLastYear": 0
+    },
+    {
+      "name": "MyBankingWorld_FlaskApp",
+      "description": null,
+      "htmlUrl": "https://github.com/171801rohith/MyBankingWorld_FlaskApp",
+      "homepage": null,
+      "language": "Python",
+      "languages": {
+        "Python": 45734,
+        "HTML": 12664,
+        "CSS": 5603
+      },
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "fork": false,
+      "archived": false,
+      "size": 214,
+      "createdAt": "2025-02-08T17:56:10Z",
+      "updatedAt": "2025-07-24T14:54:47Z",
+      "pushedAt": "2025-07-24T14:54:43Z",
+      "commitsLastYear": 0
+    },
+    {
+      "name": "Ollama-chatbot-gemma3",
+      "description": null,
+      "htmlUrl": "https://github.com/171801rohith/Ollama-chatbot-gemma3",
+      "homepage": null,
+      "language": "Python",
+      "languages": {},
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "fork": false,
+      "archived": false,
+      "size": 0,
+      "createdAt": "2025-07-22T17:05:25Z",
+      "updatedAt": "2025-07-22T17:07:55Z",
+      "pushedAt": "2025-07-22T17:07:51Z",
+      "commitsLastYear": 0
+    },
+    {
+      "name": "MySimpleChatBot-StreamLit",
+      "description": null,
+      "htmlUrl": "https://github.com/171801rohith/MySimpleChatBot-StreamLit",
+      "homepage": null,
+      "language": "Python",
+      "languages": {
+        "Python": 1227
+      },
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "fork": false,
+      "archived": false,
+      "size": 48,
+      "createdAt": "2025-06-12T08:00:04Z",
+      "updatedAt": "2025-06-19T14:08:46Z",
+      "pushedAt": "2025-06-19T14:08:43Z",
+      "commitsLastYear": 0
+    },
+    {
+      "name": "DevOps",
+      "description": null,
+      "htmlUrl": "https://github.com/171801rohith/DevOps",
+      "homepage": null,
+      "language": "Java",
+      "languages": {
+        "Java": 800
+      },
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "fork": false,
+      "archived": false,
+      "size": 60,
+      "createdAt": "2025-06-12T15:38:58Z",
+      "updatedAt": "2025-06-12T15:42:05Z",
+      "pushedAt": "2025-06-12T15:42:01Z",
+      "commitsLastYear": 0
+    },
+    {
+      "name": "MyNewsApp",
+      "description": null,
+      "htmlUrl": "https://github.com/171801rohith/MyNewsApp",
+      "homepage": null,
+      "language": "CSS",
+      "languages": {
+        "CSS": 2532,
+        "HTML": 1377,
+        "Python": 846,
+        "Dockerfile": 325
+      },
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "fork": false,
+      "archived": false,
+      "size": 9,
+      "createdAt": "2025-03-03T14:02:38Z",
+      "updatedAt": "2025-06-11T09:35:29Z",
+      "pushedAt": "2025-06-11T09:35:26Z",
+      "commitsLastYear": 0
+    },
+    {
+      "name": "DSA-DAA-2nd-Yr",
+      "description": null,
+      "htmlUrl": "https://github.com/171801rohith/DSA-DAA-2nd-Yr",
+      "homepage": null,
+      "language": "C",
+      "languages": {
+        "C": 39315,
+        "Java": 11790
+      },
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "fork": false,
+      "archived": false,
+      "size": 25,
+      "createdAt": "2025-06-09T10:36:57Z",
+      "updatedAt": "2025-06-09T13:47:59Z",
+      "pushedAt": "2025-06-09T13:47:56Z",
+      "commitsLastYear": 0
+    },
+    {
+      "name": "devbabli",
+      "description": null,
+      "htmlUrl": "https://github.com/171801rohith/devbabli",
+      "homepage": null,
+      "language": "Java",
+      "languages": {
+        "Java": 800
+      },
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "fork": false,
+      "archived": false,
+      "size": 60,
+      "createdAt": "2025-06-04T15:34:31Z",
+      "updatedAt": "2025-06-04T15:40:09Z",
+      "pushedAt": "2025-06-04T15:40:07Z",
+      "commitsLastYear": 0
+    },
+    {
+      "name": "git4a",
+      "description": null,
+      "htmlUrl": "https://github.com/171801rohith/git4a",
+      "homepage": null,
+      "language": "HTML",
+      "languages": {
+        "HTML": 205
+      },
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "fork": false,
+      "archived": false,
+      "size": 1008,
+      "createdAt": "2025-03-13T08:42:10Z",
+      "updatedAt": "2025-06-04T12:43:07Z",
+      "pushedAt": "2025-06-04T12:43:05Z",
+      "commitsLastYear": 0
+    },
+    {
+      "name": "ROS-Project",
+      "description": null,
+      "htmlUrl": "https://github.com/171801rohith/ROS-Project",
+      "homepage": null,
+      "language": null,
+      "languages": {},
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "fork": false,
+      "archived": false,
+      "size": 153424,
+      "createdAt": "2025-02-21T16:31:04Z",
+      "updatedAt": "2025-02-21T16:48:04Z",
+      "pushedAt": "2025-02-21T16:47:53Z",
+      "commitsLastYear": 0
+    },
+    {
+      "name": "FlaskProject_CRUD",
+      "description": null,
+      "htmlUrl": "https://github.com/171801rohith/FlaskProject_CRUD",
+      "homepage": null,
+      "language": "Python",
+      "languages": {
+        "Python": 11286,
+        "HTML": 4516
+      },
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "fork": false,
+      "archived": false,
+      "size": 50,
+      "createdAt": "2024-12-19T12:41:25Z",
+      "updatedAt": "2025-02-08T16:36:37Z",
+      "pushedAt": "2025-02-08T16:36:33Z",
+      "commitsLastYear": 0
+    },
+    {
+      "name": "tic_tac_toe_Python",
+      "description": null,
+      "htmlUrl": "https://github.com/171801rohith/tic_tac_toe_Python",
+      "homepage": null,
+      "language": "Python",
+      "languages": {
+        "Python": 6407
+      },
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "fork": false,
+      "archived": false,
+      "size": 8,
+      "createdAt": "2024-10-14T18:06:15Z",
+      "updatedAt": "2024-10-15T17:17:26Z",
+      "pushedAt": "2024-10-15T08:54:28Z",
+      "commitsLastYear": 0
+    },
+    {
+      "name": "tic_tac_toe_Java",
+      "description": null,
+      "htmlUrl": "https://github.com/171801rohith/tic_tac_toe_Java",
+      "homepage": null,
+      "language": "Java",
+      "languages": {
+        "Java": 4082
+      },
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "fork": false,
+      "archived": false,
+      "size": 11,
+      "createdAt": "2024-09-11T08:41:20Z",
+      "updatedAt": "2024-10-15T08:17:57Z",
+      "pushedAt": "2024-10-15T08:17:53Z",
+      "commitsLastYear": 0
+    }
+  ]
+}
