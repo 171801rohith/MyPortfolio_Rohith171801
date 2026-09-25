@@ -1,0 +1,57 @@
+# Keeps the GitHub & LeetCode numbers on the site fresh.
+#
+# Every day it runs scripts/fetch-github.js. If any number changed, it commits the
+# updated src/data/*.json to main, and that push makes Vercel redeploy the site.
+# No secrets needed: the built-in GITHUB_TOKEN covers the GitHub API calls.
+#
+# Run it by hand any time: Actions tab → "Refresh stats" → Run workflow.
+name: Refresh stats
+
+on:
+  schedule:
+    - cron: '30 0 * * *' # daily at 00:30 UTC (06:00 IST)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-stats
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # The script has no dependencies, so no npm install is needed.
+      # If one source fails (e.g. LeetCode briefly blocking the runner), the other
+      # source's changes are still committed and the old file for the failed one is kept.
+      - name: Fetch GitHub & LeetCode data
+        id: fetch
+        continue-on-error: true
+        run: node scripts/fetch-github.js
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit changes
+        run: |
+          if git diff --quiet -- src/data; then
+            echo "Stats unchanged, nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/github.json src/data/leetcode.json
+          git commit -m "chore: refresh GitHub & LeetCode stats"
+          git push
+
+      - name: Flag a partial refresh
+        if: steps.fetch.outcome == 'failure'
+        run: |
+          echo "::warning::One data source failed to refresh; see the 'Fetch GitHub & LeetCode data' step."

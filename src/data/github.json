@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T07:41:03.580Z",
+  "generatedAt": "2026-09-25T08:56:10.494Z",
   "user": {
     "login": "171801rohith",
     "name": "Rohith M",
@@ -53,11 +53,11 @@
       },
       {
         "week": "2025-12-01",
-        "count": 2
+        "count": 0
       },
       {
         "week": "2025-12-08",
-        "count": 1
+        "count": 0
       },
       {
         "week": "2025-12-15",
@@ -224,11 +224,55 @@
         "count": 40
       }
     ],
-    "commitsLastYear": 486,
-    "activeWeeks": 38,
+    "commitsLastYear": 483,
+    "activeWeeks": 36,
     "longestWeekStreak": 31
   },
   "repos": [
+    {
+      "name": "LeetCode-Progs",
+      "description": null,
+      "htmlUrl": "https://github.com/171801rohith/LeetCode-Progs",
+      "homepage": null,
+      "language": "Java",
+      "languages": {
+        "Java": 796971,
+        "PLpgSQL": 9477
+      },
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "fork": false,
+      "archived": false,
+      "size": 1126,
+      "createdAt": "2024-10-16T15:17:00Z",
+      "updatedAt": "2026-09-25T08:53:25Z",
+      "pushedAt": "2026-09-25T08:53:22Z",
+      "commitsLastYear": 399
+    },
+    {
+      "name": "MyPortfolio_Rohith171801",
+      "description": null,
+      "htmlUrl": "https://github.com/171801rohith/MyPortfolio_Rohith171801",
+      "homepage": "https://my-portfolio-rohith171801.vercel.app",
+      "language": "TypeScript",
+      "languages": {
+        "TypeScript": 65564,
+        "JavaScript": 8426,
+        "HTML": 4268,
+        "CSS": 3763
+      },
+      "stars": 1,
+      "forks": 1,
+      "topics": [],
+      "fork": false,
+      "archived": false,
+      "size": 6436,
+      "createdAt": "2025-02-26T05:23:26Z",
+      "updatedAt": "2026-09-25T08:24:14Z",
+      "pushedAt": "2026-09-25T08:24:09Z",
+      "commitsLastYear": 0
+    },
     {
       "name": "My-AI-Agent",
       "description": null,
@@ -248,27 +292,6 @@
       "updatedAt": "2026-09-24T16:54:21Z",
       "pushedAt": "2026-09-24T16:54:16Z",
       "commitsLastYear": 7
-    },
-    {
-      "name": "LeetCode-Progs",
-      "description": null,
-      "htmlUrl": "https://github.com/171801rohith/LeetCode-Progs",
-      "homepage": null,
-      "language": "Java",
-      "languages": {
-        "Java": 795548,
-        "PLpgSQL": 9477
-      },
-      "stars": 0,
-      "forks": 0,
-      "topics": [],
-      "fork": false,
-      "archived": false,
-      "size": 1126,
-      "createdAt": "2024-10-16T15:17:00Z",
-      "updatedAt": "2026-09-24T14:02:56Z",
-      "pushedAt": "2026-09-24T14:02:34Z",
-      "commitsLastYear": 399
     },
     {
       "name": "ProcureMind",
@@ -403,13 +426,7 @@
       "htmlUrl": "https://github.com/171801rohith/DBMS_MINI_PROJECT_KARO",
       "homepage": null,
       "language": "Python",
-      "languages": {
-        "Python": 49390,
-        "JavaScript": 39371,
-        "CSS": 28728,
-        "Mako": 704,
-        "HTML": 583
-      },
+      "languages": {},
       "stars": 0,
       "forks": 0,
       "topics": [],
@@ -419,7 +436,7 @@
       "createdAt": "2025-12-02T14:15:29Z",
       "updatedAt": "2025-12-08T14:40:00Z",
       "pushedAt": "2025-12-08T14:39:56Z",
-      "commitsLastYear": 3
+      "commitsLastYear": 0
     },
     {
       "name": "PYTHON",
@@ -485,32 +502,6 @@
       "createdAt": "2025-08-31T06:11:17Z",
       "updatedAt": "2025-09-07T12:26:55Z",
       "pushedAt": "2025-09-07T12:26:51Z",
-      "commitsLastYear": 0
-    },
-    {
-      "name": "MyPortfolio_Rohith171801",
-      "description": null,
-      "htmlUrl": "https://github.com/171801rohith/MyPortfolio_Rohith171801",
-      "homepage": "https://my-portfolio-rohith171801.vercel.app",
-      "language": "Python",
-      "languages": {
-        "Python": 6794832,
-        "PowerShell": 25697,
-        "CSS": 16013,
-        "JavaScript": 10068,
-        "HTML": 9528,
-        "C": 4149,
-        "Batchfile": 1352
-      },
-      "stars": 1,
-      "forks": 1,
-      "topics": [],
-      "fork": false,
-      "archived": false,
-      "size": 6436,
-      "createdAt": "2025-02-26T05:23:26Z",
-      "updatedAt": "2025-08-28T10:30:01Z",
-      "pushedAt": "2025-08-02T14:16:32Z",
       "commitsLastYear": 0
     },
     {

@@ -10,7 +10,9 @@
  *   GITHUB_TOKEN=ghp_xxx npm run fetch:github     # optional, lifts the 60 req/hour GitHub limit
  *
  * Each source is independent: if one fails, its existing JSON is left untouched
- * and the other still refreshes.
+ * and the other still refreshes. A file is only rewritten when its data actually
+ * changed, so the daily workflow (.github/workflows/refresh-stats.yml) commits
+ * only on real changes.
  *
  * Unauthenticated GitHub runs use roughly 2 + 2 × (number of repos) requests, which
  * fits inside the anonymous limit for ~25 repos.
@@ -56,14 +58,30 @@ async function gh(url, { allow202 = false } = {}) {
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-/** /stats/participation is computed lazily; GitHub answers 202 until it's ready. */
+/**
+ * /stats/participation is computed lazily; GitHub answers 202 until it's ready.
+ * Give up loudly rather than recording zero commits for the repo.
+ */
 async function participation(repo) {
-  for (let attempt = 0; attempt < 4; attempt++) {
+  for (let attempt = 0; attempt < 6; attempt++) {
     const data = await gh(`/repos/${USERNAME}/${repo}/stats/participation`, { allow202: true });
     if (data && !data.pending) return data.owner ?? [];
-    await sleep(1500 * (attempt + 1));
+    await sleep(2000 * (attempt + 1));
   }
-  return [];
+  throw new Error(`commit stats for ${repo} were still being computed by GitHub; try again in a minute.`);
+}
+
+/** Writes `data` unless it matches the existing file apart from `generatedAt`. Returns true if written. */
+async function writeIfChanged(file, data) {
+  try {
+    const { generatedAt: _old, ...prev } = JSON.parse(await readFile(file, 'utf8'));
+    const { generatedAt: _new, ...next } = data;
+    if (JSON.stringify(prev) === JSON.stringify(next)) return false;
+  } catch {
+    /* missing or unreadable: write it */
+  }
+  await writeFile(file, JSON.stringify(data, null, 2) + '\n');
+  return true;
 }
 
 function mondayOf(date) {
@@ -152,11 +170,9 @@ async function fetchGitHub() {
     repos,
   };
 
-  await writeFile(GITHUB_OUT, JSON.stringify(data, null, 2) + '\n');
-  console.log(
-    `Wrote ${path.relative(process.cwd(), GITHUB_OUT)}: ${repos.length} repos, ` +
-      `${data.stats.commitsLastYear} commits in the last 52 weeks.`,
-  );
+  const summary = `${repos.length} repos, ${data.stats.commitsLastYear} commits in the last 52 weeks`;
+  const rel = path.relative(process.cwd(), GITHUB_OUT);
+  console.log((await writeIfChanged(GITHUB_OUT, data)) ? `Wrote ${rel}: ${summary}.` : `${rel} unchanged (${summary}).`);
 }
 
 async function fetchLeetCode() {
@@ -201,8 +217,12 @@ async function fetchLeetCode() {
     activeDays: u.userCalendar?.totalActiveDays ?? 0,
     maxStreak: u.userCalendar?.streak ?? 0,
   };
-  await writeFile(LEETCODE_OUT, JSON.stringify(out, null, 2) + '\n');
-  console.log(`Wrote ${path.relative(process.cwd(), LEETCODE_OUT)}: ${out.solved} problems solved.`);
+  const rel = path.relative(process.cwd(), LEETCODE_OUT);
+  console.log(
+    (await writeIfChanged(LEETCODE_OUT, out))
+      ? `Wrote ${rel}: ${out.solved} problems solved.`
+      : `${rel} unchanged (${out.solved} problems solved).`,
+  );
 }
 
 async function run(name, file, fn) {

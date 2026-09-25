@@ -1,9 +1,12 @@
 import { ArrowUp } from 'lucide-react';
 import { profile } from '../data/portfolio';
 import { github } from '../lib/github';
+import { leetcode } from '../lib/leetcode';
 
 export function Footer() {
-  const refreshed = new Date(github.generatedAt).toLocaleDateString('en-US', {
+  // Data files are only rewritten when a number changes, so this is "last changed".
+  const latest = Math.max(Date.parse(github.generatedAt), Date.parse(leetcode.generatedAt));
+  const refreshed = new Date(latest).toLocaleDateString('en-US', {
     day: 'numeric',
     month: 'short',
     year: 'numeric',
@@ -15,7 +18,7 @@ export function Footer() {
           © {new Date().getFullYear()} {profile.name}. Built with React, Tailwind CSS and Framer Motion.
         </p>
         <div className="flex items-center gap-5">
-          <span className="font-mono text-xs">GitHub data: {refreshed}</span>
+          <span className="font-mono text-xs">Stats updated {refreshed}</span>
           <a href="#top" className="inline-flex items-center gap-1.5 transition-colors hover:text-ink">
             Back to top
             <ArrowUp className="size-4" aria-hidden />

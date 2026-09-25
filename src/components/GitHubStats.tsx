@@ -301,8 +301,8 @@ export function GitHubStats() {
       intro={
         <>
           Pulled from the GitHub and LeetCode APIs by{' '}
-          <code className="font-mono text-[0.9em] text-ink">scripts/fetch-github.js</code>, so these numbers stay
-          honest.
+          <code className="font-mono text-[0.9em] text-ink">scripts/fetch-github.js</code>, refreshed automatically
+          every day.
         </>
       }
     >

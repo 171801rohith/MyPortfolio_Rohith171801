@@ -36,6 +36,17 @@ The downloadable resume is `public/Rohith_M_Resume.pdf`. Replace the file (keep 
 
 ## Refreshing GitHub & LeetCode data
 
+### Automatic (daily)
+
+`.github/workflows/refresh-stats.yml` runs every day at 00:30 UTC (06:00 IST). It runs the fetch script and, **only if a number changed**, commits the updated `src/data/*.json` to `main`. That push makes Vercel redeploy, so the live site is never more than a day behind. It needs no secrets, because it uses the built-in `GITHUB_TOKEN`.
+
+- Run it on demand: **Actions → Refresh stats → Run workflow**.
+- Change the schedule by editing the `cron` line (e.g. `'0 */6 * * *'` for every 6 hours).
+- The bot's commits are authored by `github-actions[bot]`, so they don't count toward your own commit stats.
+- GitHub pauses scheduled workflows in repos with no activity for 60 days. If that happens, re-enable it from the Actions tab.
+
+### Manual
+
 ```bash
 npm run fetch:github
 # optional: lift the 60 requests/hour anonymous GitHub limit
@@ -45,7 +56,7 @@ npm run fetch:github -- --leetcode-only
 npm run fetch:github -- --github-only
 ```
 
-The script (`scripts/fetch-github.js`) uses the GitHub REST API. It doesn't scrape anything. For each repo it collects stars, forks, topics, languages, homepage, dates, and weekly commit counts for the last 52 weeks. It writes everything to `src/data/github.json`, which the Projects and GitHub sections read at build time. It also queries LeetCode's public GraphQL API (the same endpoint the profile page uses) for solved counts by difficulty, active days, max streak and badges, and writes them to `src/data/leetcode.json`. Re-run it and redeploy whenever you want fresh numbers. The two sources are independent: if one fails (for example, the GitHub rate limit), its existing file is left untouched and the other still refreshes.
+The script (`scripts/fetch-github.js`) uses the GitHub REST API. It doesn't scrape anything. For each repo it collects stars, forks, topics, languages, homepage, dates, and weekly commit counts for the last 52 weeks. It writes everything to `src/data/github.json`, which the Projects and GitHub sections read at build time. It also queries LeetCode's public GraphQL API (the same endpoint the profile page uses) for solved counts by difficulty, active days, max streak and badges, and writes them to `src/data/leetcode.json`. A file is only rewritten when its data changed, apart from the `generatedAt` timestamp. The footer's "Stats updated" date therefore shows when a number last changed. The two sources are independent: if one fails (for example, the GitHub rate limit), its existing file is left untouched and the other still refreshes.
 
 Notes:
 
