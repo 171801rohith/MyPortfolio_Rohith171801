@@ -33,7 +33,7 @@ export const about = {
   paragraphs: [
     "I'm a final-year Computer Science student at Sahyadri College of Engineering and Management, and most of what I build lives behind an API. I care about the parts nobody sees: how a request moves between services, what happens when something fails halfway through, and how an LLM's answer gets grounded and checked before anyone relies on it.",
     'I spent a year as a Software Engineering Intern at Datavex.ai, writing FastAPI services for an AI-powered CRM used by a US-based client, and designing a multi-tenant education SaaS in Spring Boot, where Kafka kept the microservices in sync and a Gemini + OCR pipeline read admission documents.',
-    "My own projects follow the same habits. ProcureMind analyses contracts across Spring services that talk over Kafka. Sanctuary is a voice agent on my PC that asks before doing anything it can't undo. Strongbox is a password vault that can't reach the network at all. I'm looking for a team where I can keep building systems like these.",
+    "My own projects follow the same habits. ProcureMind analyses contracts across Spring services that talk over Kafka. Sanctuary is a voice agent on my PC that asks before doing anything it can't undo. TriageDesk drafts support replies but leaves the send decision to plain Python rules and a human. Strongbox is a password vault that can't reach the network at all. I'm looking for a team where I can keep building systems like these.",
   ],
   facts: [
     { label: 'CGPA', value: '9.44', note: 'up to 6th semester' },
@@ -54,9 +54,13 @@ export const skills: { category: string; icon: SkillIcon; items: string[] }[] = 
   {
     category: 'AI / ML',
     icon: 'brain',
-    items: ['LangChain', 'RAG', 'Gemini API', 'Spring AI', 'Azure OpenAI', 'Ollama', 'OCR (Tesseract)'],
+    items: ['LangChain', 'RAG', 'Gemini API', 'Spring AI', 'Azure OpenAI', 'Ollama', 'MCP', 'OCR (Tesseract)'],
   },
-  { category: 'Databases', icon: 'database', items: ['PostgreSQL', 'MySQL', 'MongoDB', 'ChromaDB', 'Firebase'] },
+  {
+    category: 'Databases',
+    icon: 'database',
+    items: ['PostgreSQL', 'pgvector', 'MySQL', 'MongoDB', 'SQLite', 'ChromaDB', 'Firebase'],
+  },
   {
     category: 'Cloud & Tooling',
     icon: 'cloud',
@@ -179,6 +183,31 @@ export const projects: Project[] = [
     tags: ['Python', 'FastAPI', 'LangChain', 'Gemini 2.0', 'ChromaDB', 'OCR', 'Docker'],
     filters: ['Python', 'AI / LLM'],
     featured: true,
+  },
+  {
+    repo: 'TriageDesk',
+    title: 'TriageDesk',
+    subtitle: 'AI support-ticket triage with human review',
+    summary:
+      'Every new support ticket is classified by category, priority and sentiment, matched against a knowledge base with pgvector search, and given a draft reply grounded in the retrieved articles. Plain Python guardrails then decide whether a human must review it. Nothing is ever sent automatically.',
+    highlights: [
+      'A fixed classify → retrieve → draft → guardrails pipeline instead of an agent, with every LLM answer validated as a Pydantic object',
+      'Gemini or a local Ollama model, switched by one config value; only one file knows which provider is active',
+      'Any LLM failure falls back to human review, and every run is logged with model, prompt version and per-step timings',
+      'Evaluated on 24 labelled tickets: 92% category accuracy on a local 8B model; a longer prompt that scored worse was rejected',
+    ],
+    tags: ['Python', 'FastAPI', 'PostgreSQL', 'pgvector', 'LangChain', 'Gemini', 'Ollama', 'SQLAlchemy', 'Docker'],
+    filters: ['Python', 'AI / LLM'],
+    featured: true,
+  },
+  {
+    repo: 'ApplyLog-MCP',
+    title: 'ApplyLog',
+    subtitle: 'MCP server that replaced my placement spreadsheet',
+    summary:
+      "A local MCP server for Claude Desktop. I paste a registration message or a test-invite email and Claude logs the drive and its rounds; later I can ask what's coming up this week or at which round type I keep failing. Eight tools, one SQLite file with daily backups, no network calls.",
+    tags: ['Python', 'MCP', 'SQLite', 'Claude Desktop'],
+    filters: ['Python', 'AI / LLM'],
   },
   {
     repo: 'StrongBox',

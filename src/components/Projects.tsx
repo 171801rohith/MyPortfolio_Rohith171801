@@ -22,10 +22,10 @@ function ProjectCard({ project, index, order }: { project: Project; index: numbe
       viewport={{ once: true, margin: '0px 0px -60px 0px' }}
       transition={{ duration: 0.45, delay: (order % 2) * 0.06, ease: EASE }}
       className={`card group relative flex flex-col p-6 transition-[border-color,box-shadow] duration-300 hover:border-ink/40 hover:shadow-[0_18px_40px_-24px_rgb(0_0_0/0.35)] sm:p-7 ${
-        featured ? 'md:col-span-2 lg:grid lg:grid-cols-[1.25fr_1fr] lg:gap-10 lg:p-9' : ''
+        featured ? 'md:col-span-2 lg:col-span-3 lg:grid lg:grid-cols-[1.25fr_1fr] lg:gap-10 lg:p-9' : ''
       }`}
     >
-      <div className="flex flex-col">
+      <div className="flex flex-1 flex-col">
         <div className="flex flex-wrap items-center gap-2 font-mono text-xs text-muted">
           <span className="text-accent-ink">{String(index + 1).padStart(2, '0')}</span>
           <span aria-hidden="true">/</span>
@@ -119,7 +119,7 @@ export function Projects() {
       id="projects"
       index="04"
       title="Projects"
-      intro="A selection of what I've built. The first three are the ones I'd walk you through in an interview."
+      intro="A selection of what I've built, most substantial first."
     >
       <div
         role="group"
@@ -151,7 +151,7 @@ export function Projects() {
       </p>
 
       {/* Re-keyed per filter so the matching cards animate in fresh. */}
-      <div key={filter} className="grid gap-4 md:grid-cols-2">
+      <div key={filter} className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         {visible.map((p, i) => (
           <ProjectCard key={p.repo} project={p} index={projects.indexOf(p)} order={i} />
         ))}
