@@ -1,27 +1,23 @@
 {
-  "generatedAt": "2026-10-04T06:06:03.038Z",
+  "generatedAt": "2026-10-05T05:59:01.780Z",
   "user": {
     "login": "171801rohith",
     "name": "Rohith M",
     "avatarUrl": "https://avatars.githubusercontent.com/u/180276671?v=4",
     "htmlUrl": "https://github.com/171801rohith",
-    "publicRepos": 28,
+    "publicRepos": 29,
     "followers": 6,
     "createdAt": "2024-09-03T09:35:12Z"
   },
   "stats": {
-    "totalRepos": 28,
-    "originalRepos": 24,
+    "totalRepos": 29,
+    "originalRepos": 25,
     "forkedRepos": 4,
     "totalStars": 1,
     "weeklyCommits": [
       {
-        "week": "2025-10-06",
-        "count": 19
-      },
-      {
         "week": "2025-10-13",
-        "count": 0
+        "count": 19
       },
       {
         "week": "2025-10-20",
@@ -73,11 +69,11 @@
       },
       {
         "week": "2026-01-12",
-        "count": 4
+        "count": 0
       },
       {
         "week": "2026-01-19",
-        "count": 3
+        "count": 6
       },
       {
         "week": "2026-01-26",
@@ -85,47 +81,47 @@
       },
       {
         "week": "2026-02-02",
-        "count": 3
+        "count": 1
       },
       {
         "week": "2026-02-09",
-        "count": 6
+        "count": 3
       },
       {
         "week": "2026-02-16",
-        "count": 0
-      },
-      {
-        "week": "2026-02-23",
-        "count": 11
-      },
-      {
-        "week": "2026-03-02",
-        "count": 13
-      },
-      {
-        "week": "2026-03-09",
-        "count": 17
-      },
-      {
-        "week": "2026-03-16",
-        "count": 27
-      },
-      {
-        "week": "2026-03-23",
-        "count": 14
-      },
-      {
-        "week": "2026-03-30",
-        "count": 8
-      },
-      {
-        "week": "2026-04-06",
         "count": 6
       },
       {
-        "week": "2026-04-13",
+        "week": "2026-02-23",
+        "count": 0
+      },
+      {
+        "week": "2026-03-02",
+        "count": 12
+      },
+      {
+        "week": "2026-03-09",
+        "count": 14
+      },
+      {
+        "week": "2026-03-16",
+        "count": 28
+      },
+      {
+        "week": "2026-03-23",
+        "count": 15
+      },
+      {
+        "week": "2026-03-30",
+        "count": 14
+      },
+      {
+        "week": "2026-04-06",
         "count": 8
+      },
+      {
+        "week": "2026-04-13",
+        "count": 7
       },
       {
         "week": "2026-04-20",
@@ -133,11 +129,11 @@
       },
       {
         "week": "2026-04-27",
-        "count": 6
+        "count": 7
       },
       {
         "week": "2026-05-04",
-        "count": 7
+        "count": 6
       },
       {
         "week": "2026-05-11",
@@ -145,11 +141,11 @@
       },
       {
         "week": "2026-05-18",
-        "count": 6
+        "count": 7
       },
       {
         "week": "2026-05-25",
-        "count": 7
+        "count": 6
       },
       {
         "week": "2026-06-01",
@@ -157,51 +153,51 @@
       },
       {
         "week": "2026-06-08",
-        "count": 12
+        "count": 7
       },
       {
         "week": "2026-06-15",
-        "count": 5
+        "count": 11
       },
       {
         "week": "2026-06-22",
-        "count": 3
+        "count": 6
       },
       {
         "week": "2026-06-29",
-        "count": 4
+        "count": 2
       },
       {
         "week": "2026-07-06",
-        "count": 14
+        "count": 6
       },
       {
         "week": "2026-07-13",
-        "count": 13
+        "count": 14
       },
       {
         "week": "2026-07-20",
-        "count": 28
+        "count": 14
       },
       {
         "week": "2026-07-27",
-        "count": 24
+        "count": 30
       },
       {
         "week": "2026-08-03",
-        "count": 33
+        "count": 24
       },
       {
         "week": "2026-08-10",
-        "count": 23
+        "count": 32
       },
       {
         "week": "2026-08-17",
-        "count": 25
+        "count": 24
       },
       {
         "week": "2026-08-24",
-        "count": 13
+        "count": 20
       },
       {
         "week": "2026-08-31",
@@ -209,26 +205,94 @@
       },
       {
         "week": "2026-09-07",
-        "count": 32
+        "count": 18
       },
       {
         "week": "2026-09-14",
-        "count": 17
+        "count": 29
       },
       {
         "week": "2026-09-21",
-        "count": 37
+        "count": 20
       },
       {
         "week": "2026-09-28",
-        "count": 6
+        "count": 32
+      },
+      {
+        "week": "2026-10-05",
+        "count": 9
       }
     ],
-    "commitsLastYear": 489,
+    "commitsLastYear": 492,
     "activeWeeks": 38,
     "longestWeekStreak": 32
   },
   "repos": [
+    {
+      "name": "MyPortfolio_Rohith171801",
+      "description": null,
+      "htmlUrl": "https://github.com/171801rohith/MyPortfolio_Rohith171801",
+      "homepage": "https://my-portfolio-rohith171801.vercel.app",
+      "language": "TypeScript",
+      "languages": {
+        "TypeScript": 67594,
+        "JavaScript": 9354,
+        "HTML": 4268,
+        "CSS": 3763
+      },
+      "stars": 1,
+      "forks": 1,
+      "topics": [],
+      "fork": false,
+      "archived": false,
+      "size": 6577,
+      "createdAt": "2025-02-26T05:23:26Z",
+      "updatedAt": "2026-10-04T07:45:42Z",
+      "pushedAt": "2026-10-04T07:45:39Z",
+      "commitsLastYear": 3
+    },
+    {
+      "name": "ApplyLog-MCP",
+      "description": null,
+      "htmlUrl": "https://github.com/171801rohith/ApplyLog-MCP",
+      "homepage": null,
+      "language": "Python",
+      "languages": {
+        "Python": 86479
+      },
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "fork": false,
+      "archived": false,
+      "size": 37,
+      "createdAt": "2026-10-04T07:36:26Z",
+      "updatedAt": "2026-10-04T07:36:52Z",
+      "pushedAt": "2026-10-04T07:36:48Z",
+      "commitsLastYear": 1
+    },
+    {
+      "name": "LeetCode-Progs",
+      "description": null,
+      "htmlUrl": "https://github.com/171801rohith/LeetCode-Progs",
+      "homepage": null,
+      "language": "Java",
+      "languages": {
+        "Java": 806184,
+        "PLpgSQL": 9477
+      },
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "fork": false,
+      "archived": false,
+      "size": 1201,
+      "createdAt": "2024-10-16T15:17:00Z",
+      "updatedAt": "2026-10-04T07:10:49Z",
+      "pushedAt": "2026-10-04T07:10:46Z",
+      "commitsLastYear": 404
+    },
     {
       "name": "Legal-Summarizer",
       "description": "understand law",
@@ -271,50 +335,6 @@
       "updatedAt": "2026-10-03T15:24:11Z",
       "pushedAt": "2026-10-03T15:24:06Z",
       "commitsLastYear": 4
-    },
-    {
-      "name": "LeetCode-Progs",
-      "description": null,
-      "htmlUrl": "https://github.com/171801rohith/LeetCode-Progs",
-      "homepage": null,
-      "language": "Java",
-      "languages": {
-        "Java": 804571,
-        "PLpgSQL": 9477
-      },
-      "stars": 0,
-      "forks": 0,
-      "topics": [],
-      "fork": false,
-      "archived": false,
-      "size": 1165,
-      "createdAt": "2024-10-16T15:17:00Z",
-      "updatedAt": "2026-10-03T12:23:09Z",
-      "pushedAt": "2026-10-03T12:23:06Z",
-      "commitsLastYear": 403
-    },
-    {
-      "name": "MyPortfolio_Rohith171801",
-      "description": null,
-      "htmlUrl": "https://github.com/171801rohith/MyPortfolio_Rohith171801",
-      "homepage": "https://my-portfolio-rohith171801.vercel.app",
-      "language": "TypeScript",
-      "languages": {
-        "TypeScript": 65780,
-        "JavaScript": 9354,
-        "HTML": 4268,
-        "CSS": 3763
-      },
-      "stars": 1,
-      "forks": 1,
-      "topics": [],
-      "fork": false,
-      "archived": false,
-      "size": 6572,
-      "createdAt": "2025-02-26T05:23:26Z",
-      "updatedAt": "2026-10-03T05:31:06Z",
-      "pushedAt": "2026-10-03T05:31:02Z",
-      "commitsLastYear": 2
     },
     {
       "name": "My-AI-Agent",
